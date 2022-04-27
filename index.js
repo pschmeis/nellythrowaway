@@ -2,10 +2,11 @@ const express = require("express");
 
 // create server from express
 const server = express(); // server has no listeners
-const port = 3000;
+
+const PORT = porcess.env.PORT || 3000;
 
 // Create listen even for server
-server.listen(port, () => {
+server.listen(PORT, () => {
   console.log("Server listening...");
 });
 
